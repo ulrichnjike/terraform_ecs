@@ -19,7 +19,7 @@ resource "aws_codepipeline" "web_app_pipeline" {
       configuration = {
         Owner      = "yourusername"
         Repo       = "your-repo"
-        Branch     = "main"
+        Branch     = "master"
         OAuthToken = var.github_oauth_token
       }
     }
